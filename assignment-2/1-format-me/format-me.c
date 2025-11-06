@@ -40,7 +40,7 @@ void game() {
 
     while(correct < 10) {
         code = lrand();
-
+        
         printf("Recipient? ");
         fgets(buffer, sizeof(buffer), stdin);
         printf("Sending to ");
