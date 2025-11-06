@@ -32,14 +32,14 @@ void game() {
     fgets(name, sizeof(name), stdin);
 
     printf("Hello, ");
-    printf(name);
+    printf(name); // grab the canary
     printf("! Let's play a game.\n");
 
     printf("What's your message? ");
     fgets(message, 100, stdin);
 
     printf("Your message is ");
-    puts(message);
+    puts(message); //overwrite return address, keep the canary intact
 }
 
 int main() {
